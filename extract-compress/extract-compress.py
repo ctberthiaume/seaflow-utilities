@@ -91,8 +91,6 @@ if __name__ == "__main__":
                 subprocess.check_call(gzcmd, shell=True)
             except subprocess.CalledProcessError as e:
                 print(str(e), file=sys.stderr)
-                sys.exit(1)
-        
 
         try:
             os.chdir("..")
